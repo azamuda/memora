@@ -1,0 +1,80 @@
+@import "tailwindcss";
+
+@theme {
+  --font-serif: "DM Serif Display", Georgia, serif;
+  --font-sans: "DM Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  --font-handwriting: "Caveat", cursive, sans-serif;
+
+  --color-cream: #F7F3EB;
+  --color-sand: #E9E4D9;
+  --color-surface: #FBFAF6;
+  --color-dark-olive: #252821;
+  --color-dark-footer: #242720;
+  --color-deep-ink: #20231F;
+  --color-ink-muted: #64665F;
+  --color-terracotta: #E8703D;
+  --color-mustard: #F5D879;
+  --color-mustard-card: #E8C85F;
+}
+
+/* Custom utility & analog styling */
+body {
+  font-family: var(--font-sans);
+  background-color: #F7F3EB;
+  color: #20231F;
+  overflow-x: hidden;
+}
+
+h1, h2, h3, .font-display {
+  font-family: var(--font-serif);
+}
+
+/* Button default corner radius rule */
+.btn-editorial {
+  border-radius: 5px;
+  transition: all 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* Analog paper texture effect */
+.paper-texture {
+  background-color: #F7F3EB;
+  background-image: radial-gradient(#20231F 0.5px, transparent 0.5px);
+  background-size: 24px 24px;
+  background-opacity: 0.03;
+}
+
+/* Subtle analog photo shadow */
+.shadow-polaroid {
+  box-shadow: 0 10px 25px -5px rgba(32, 35, 31, 0.12), 0 8px 10px -6px rgba(32, 35, 31, 0.08);
+}
+
+.shadow-polaroid-lg {
+  box-shadow: 0 20px 35px -8px rgba(32, 35, 31, 0.18), 0 10px 15px -7px rgba(32, 35, 31, 0.1);
+}
+
+.shadow-sticky {
+  box-shadow: 2px 8px 20px -3px rgba(32, 35, 31, 0.15), 0 2px 4px -2px rgba(32, 35, 31, 0.1);
+}
+
+/* Tape decoration */
+.washi-tape {
+  background: rgba(255, 255, 255, 0.65);
+  box-shadow: 0 1px 3px rgba(0,0,0,0.08);
+  backdrop-filter: blur(1px);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F7F3EB;
+}
+::-webkit-scrollbar-thumb {
+  background: #D9D2C5;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #C4BCAC;
+}
